@@ -33,8 +33,8 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func reloadData() {
-        GaameDataService.instance.downloadTopGames {
-            for game in GaameDataService.instance.games {
+        GameDataService.instance.downloadTopGames {
+            for game in GameDataService.instance.games {
                 game.downloadGameImage(completed: {
                     self.gamesCollectionView.reloadData()
                     self.loadingIndicator.stopAnimating()
@@ -46,13 +46,13 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     //MARK: UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return GaameDataService.instance.games.count
+        return GameDataService.instance.games.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as? GameCell
         {
-            let game = GaameDataService.instance.games[indexPath.row]
+            let game = GameDataService.instance.games[indexPath.row]
             cell.configureCell(game)
             
             return cell
@@ -64,9 +64,9 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     //MARK: UICollectionViewDelegate
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let game = GaameDataService.instance.games[indexPath.row]
+        let game = GameDataService.instance.games[indexPath.row]
         performSegue(withIdentifier: "streamShowVC", sender: game)
     }
     

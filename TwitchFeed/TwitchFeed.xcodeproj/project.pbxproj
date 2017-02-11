@@ -24,6 +24,7 @@
 		3C95E7F11E4F8A3F00ABC63B /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F01E4F8A3F00ABC63B /* StreamCell.swift */; };
 		3C95E7F31E4F8B6800ABC63B /* StreamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F21E4F8B6800ABC63B /* StreamDataService.swift */; };
 		3C95E7F51E4F913A00ABC63B /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F41E4F913A00ABC63B /* Stream.swift */; };
+		3C95E7F71E4FA0CC00ABC63B /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F61E4FA0CC00ABC63B /* ChannelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		3C95E7F01E4F8A3F00ABC63B /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		3C95E7F21E4F8B6800ABC63B /* StreamDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataService.swift; sourceTree = "<group>"; };
 		3C95E7F41E4F913A00ABC63B /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		3C95E7F61E4FA0CC00ABC63B /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				3C7643B91E4F363F005A80DA /* GamesViewController.swift */,
 				3C95E7EE1E4F887E00ABC63B /* StreamsViewController.swift */,
+				3C95E7F61E4FA0CC00ABC63B /* ChannelViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				3C7643C41E4F4912005A80DA /* GameDataService.swift in Sources */,
 				3C7643BC1E4F36A9005A80DA /* Constants.swift in Sources */,
 				3C7643BE1E4F3A25005A80DA /* GameCell.swift in Sources */,
+				3C95E7F71E4FA0CC00ABC63B /* ChannelViewController.swift in Sources */,
 				3C95E7F31E4F8B6800ABC63B /* StreamDataService.swift in Sources */,
 				3C95E7F11E4F8A3F00ABC63B /* StreamCell.swift in Sources */,
 				3C95E7F51E4F913A00ABC63B /* Stream.swift in Sources */,

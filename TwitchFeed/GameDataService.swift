@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-class GaameDataService {
-    static let instance  = GaameDataService()
+class GameDataService {
+    static let instance  = GameDataService()
     
     var games = [Game]()
     

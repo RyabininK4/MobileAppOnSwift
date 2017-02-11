@@ -57,7 +57,7 @@ class StreamDataService {
         }
     }
     
-    func removeAllStream() {
+    func removeAllStreams() {
         streams.removeAll()
     }
 }
