@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,7 +33,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" id="o41-TF-7Rl">
-                                    <rect key="frame" x="169" y="283" width="37" height="37"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </activityIndicatorView>
@@ -74,18 +76,107 @@
                     <connections>
                         <outlet property="gamesCollectionView" destination="rDW-bI-oa9" id="dV4-fw-Pwr"/>
                         <outlet property="loadingIndicator" destination="o41-TF-7Rl" id="fAB-Nk-v1K"/>
+                        <segue destination="O0K-D3-GgT" kind="show" identifier="streamShowVC" id="h6T-J6-TXd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
+        <!--Streams View Controller-->
+        <scene sceneID="rBh-Tm-fFn">
+            <objects>
+                <viewController id="O0K-D3-GgT" customClass="StreamsViewController" customModule="TwitchFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpC-KM-1nR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vrw-JR-KJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YIF-W9-rMg">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-0X-guz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StreamCell" rowHeight="200" id="ruW-hz-2mf" customClass="StreamCell" customModule="TwitchFeed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ruW-hz-2mf" id="Mew-zD-0wG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-qa-WKX">
+                                                    <rect key="frame" x="8" y="8" width="359" height="189"/>
+                                                    <color key="backgroundColor" red="0.436692413" green="0.12778810660000001" blue="0.77768083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HTB-k5-iXe">
+                                                    <rect key="frame" x="16" y="126.5" width="287" height="57"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-cQ-8Uf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="287" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-uD-Mid">
+                                                            <rect key="frame" x="0.0" y="20.5" width="287" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE9-iH-J44">
+                                                            <rect key="frame" x="0.0" y="40" width="287" height="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ecg-qa-WKX" secondAttribute="trailing" constant="8" id="3z6-SS-MLe"/>
+                                                <constraint firstAttribute="bottom" secondItem="ecg-qa-WKX" secondAttribute="bottom" constant="2" id="asL-F4-iJU"/>
+                                                <constraint firstItem="HTB-k5-iXe" firstAttribute="height" secondItem="ecg-qa-WKX" secondAttribute="height" multiplier="0.3" id="cbg-Ix-5WS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HTB-k5-iXe" secondAttribute="bottom" constant="8" id="gQo-35-KFv"/>
+                                                <constraint firstItem="HTB-k5-iXe" firstAttribute="leading" secondItem="Mew-zD-0wG" secondAttribute="leadingMargin" constant="8" id="lUm-OM-bfp"/>
+                                                <constraint firstItem="ecg-qa-WKX" firstAttribute="leading" secondItem="Mew-zD-0wG" secondAttribute="leading" constant="8" id="y7F-gH-xfi"/>
+                                                <constraint firstItem="ecg-qa-WKX" firstAttribute="top" secondItem="Mew-zD-0wG" secondAttribute="top" constant="8" id="yhx-SM-yIR"/>
+                                                <constraint firstItem="HTB-k5-iXe" firstAttribute="width" secondItem="ecg-qa-WKX" secondAttribute="width" multiplier="0.8" id="zU7-Zp-jH6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="broadcasterName" destination="g2W-cQ-8Uf" id="tDX-V7-tff"/>
+                                            <outlet property="streamImageView" destination="ecg-qa-WKX" id="PIx-qP-dSI"/>
+                                            <outlet property="streamTitle" destination="iBy-uD-Mid" id="GDc-bm-Lyu"/>
+                                            <outlet property="streamViewers" destination="NE9-iH-J44" id="Uv3-gw-GYf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P3J-0X-guz" secondAttribute="trailing" id="BJH-yP-mYd"/>
+                            <constraint firstItem="P3J-0X-guz" firstAttribute="top" secondItem="wpC-KM-1nR" secondAttribute="bottom" id="Hmo-Pg-n7C"/>
+                            <constraint firstItem="P3J-0X-guz" firstAttribute="leading" secondItem="YIF-W9-rMg" secondAttribute="leading" id="aC6-YT-zTW"/>
+                            <constraint firstItem="Vrw-JR-KJg" firstAttribute="top" secondItem="P3J-0X-guz" secondAttribute="bottom" id="ofP-pN-bSn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="streamsTableView" destination="P3J-0X-guz" id="RkI-eN-Hvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LI8-ej-wt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="137"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z4A-ab-T7Z">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EfC-Iu-HO8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="P2Z-gt-GjS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="P2Z-gt-GjS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.436692413" green="0.12778810660000001" blue="0.77768083759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

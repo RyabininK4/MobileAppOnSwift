@@ -66,6 +66,8 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
     //MARK: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
+        let game = GaameDataService.instance.games[indexPath.row]
+        performSegue(withIdentifier: "streamShowVC", sender: game)
     }
     
     //MARK: UICollectionViewDelegateFlowLayout
@@ -76,4 +78,14 @@ class GamesViewController: UIViewController, UICollectionViewDelegate, UICollect
         return CGSize(width: width, height: height)
     }
     
+    //MARK: Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "streamShowVC" {
+            if let streamVC = segue.destination as? StreamsViewController {
+                if let game = sender as? Game {
+                    streamVC.game = game
+                }
+            }
+        }
+    }
 }

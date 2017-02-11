@@ -20,6 +20,10 @@
 		3C7643BE1E4F3A25005A80DA /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7643BD1E4F3A25005A80DA /* GameCell.swift */; };
 		3C7643C11E4F44BE005A80DA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7643C01E4F44BE005A80DA /* Game.swift */; };
 		3C7643C41E4F4912005A80DA /* GameDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7643C31E4F4912005A80DA /* GameDataService.swift */; };
+		3C95E7EF1E4F887E00ABC63B /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7EE1E4F887E00ABC63B /* StreamsViewController.swift */; };
+		3C95E7F11E4F8A3F00ABC63B /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F01E4F8A3F00ABC63B /* StreamCell.swift */; };
+		3C95E7F31E4F8B6800ABC63B /* StreamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F21E4F8B6800ABC63B /* StreamDataService.swift */; };
+		3C95E7F51E4F913A00ABC63B /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95E7F41E4F913A00ABC63B /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		3C7643BD1E4F3A25005A80DA /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		3C7643C01E4F44BE005A80DA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3C7643C31E4F4912005A80DA /* GameDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataService.swift; sourceTree = "<group>"; };
+		3C95E7EE1E4F887E00ABC63B /* StreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		3C95E7F01E4F8A3F00ABC63B /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		3C95E7F21E4F8B6800ABC63B /* StreamDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataService.swift; sourceTree = "<group>"; };
+		3C95E7F41E4F913A00ABC63B /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,16 +131,12 @@
 		3C7643851E4F2827005A80DA /* TwitchFeed */ = {
 			isa = PBXGroup;
 			children = (
+				3C95E7E91E4F85AC00ABC63B /* View */,
+				3C95E7E71E4F856300ABC63B /* Utilites */,
+				3C95E7E61E4F854100ABC63B /* Controllers */,
 				3C7643C21E4F4867005A80DA /* Services */,
 				3C7643BF1E4F3ED9005A80DA /* Models */,
-				3C76438A1E4F2827005A80DA /* Main.storyboard */,
-				3C7643BB1E4F36A9005A80DA /* Constants.swift */,
 				3C7643861E4F2827005A80DA /* AppDelegate.swift */,
-				3C7643B91E4F363F005A80DA /* GamesViewController.swift */,
-				3C7643BD1E4F3A25005A80DA /* GameCell.swift */,
-				3C76438D1E4F2827005A80DA /* Assets.xcassets */,
-				3C76438F1E4F2827005A80DA /* LaunchScreen.storyboard */,
-				3C7643921E4F2827005A80DA /* Info.plist */,
 			);
 			path = TwitchFeed;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				3C7643C01E4F44BE005A80DA /* Game.swift */,
+				3C95E7F41E4F913A00ABC63B /* Stream.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -176,9 +181,40 @@
 			isa = PBXGroup;
 			children = (
 				3C7643C31E4F4912005A80DA /* GameDataService.swift */,
+				3C95E7F21E4F8B6800ABC63B /* StreamDataService.swift */,
 			);
 			name = Services;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3C95E7E61E4F854100ABC63B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C7643B91E4F363F005A80DA /* GamesViewController.swift */,
+				3C95E7EE1E4F887E00ABC63B /* StreamsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3C95E7E71E4F856300ABC63B /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				3C7643BB1E4F36A9005A80DA /* Constants.swift */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+		3C95E7E91E4F85AC00ABC63B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C76438A1E4F2827005A80DA /* Main.storyboard */,
+				3C7643BD1E4F3A25005A80DA /* GameCell.swift */,
+				3C95E7F01E4F8A3F00ABC63B /* StreamCell.swift */,
+				3C76438D1E4F2827005A80DA /* Assets.xcassets */,
+				3C76438F1E4F2827005A80DA /* LaunchScreen.storyboard */,
+				3C7643921E4F2827005A80DA /* Info.plist */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,12 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C95E7EF1E4F887E00ABC63B /* StreamsViewController.swift in Sources */,
 				3C7643BA1E4F363F005A80DA /* GamesViewController.swift in Sources */,
 				3C7643C11E4F44BE005A80DA /* Game.swift in Sources */,
 				3C7643871E4F2827005A80DA /* AppDelegate.swift in Sources */,
 				3C7643C41E4F4912005A80DA /* GameDataService.swift in Sources */,
 				3C7643BC1E4F36A9005A80DA /* Constants.swift in Sources */,
 				3C7643BE1E4F3A25005A80DA /* GameCell.swift in Sources */,
+				3C95E7F31E4F8B6800ABC63B /* StreamDataService.swift in Sources */,
+				3C95E7F11E4F8A3F00ABC63B /* StreamCell.swift in Sources */,
+				3C95E7F51E4F913A00ABC63B /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +621,7 @@
 				3C7643AD1E4F2827005A80DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7643AE1E4F2827005A80DA /* Build configuration list for PBXNativeTarget "TwitchFeedTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +630,7 @@
 				3C7643B01E4F2827005A80DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7643B11E4F2827005A80DA /* Build configuration list for PBXNativeTarget "TwitchFeedUITests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +639,7 @@
 				3C7643B31E4F2827005A80DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
