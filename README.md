@@ -1,3 +1,3 @@
 # MobileAppOnSwift
 
-## *My apps:*
+## **My apps:**
