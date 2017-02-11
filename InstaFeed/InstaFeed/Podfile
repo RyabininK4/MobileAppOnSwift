@@ -1,0 +1,7 @@
+use_frameworks!
+project '/Users/ryabinin_k/Desktop/Learning/Mobile-development-SWIFT/InstaFeed/InstaFeed.xcodeproj'
+
+target 'InstaFeed' do
+    pod 'ReactiveCocoa', '~> 5.0'
+    pod 'SimpleAuth/Instagram'
+end

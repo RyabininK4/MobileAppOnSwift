@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6FEBCACFC98E7C17C3869B /* Pods_InstaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9701531A1954F02F5A718971 /* Pods_InstaFeed.framework */; };
+		3C1931E91E4CBE1C00E5DBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1931E81E4CBE1C00E5DBA0 /* AppDelegate.swift */; };
+		3C1931EE1E4CBE1C00E5DBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1931EC1E4CBE1C00E5DBA0 /* Main.storyboard */; };
+		3C1931F01E4CBE1C00E5DBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1931EF1E4CBE1C00E5DBA0 /* Assets.xcassets */; };
+		3C1931F31E4CBE1C00E5DBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1931F11E4CBE1C00E5DBA0 /* LaunchScreen.storyboard */; };
+		3C1931FE1E4CBE1C00E5DBA0 /* InstaFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1931FD1E4CBE1C00E5DBA0 /* InstaFeedTests.swift */; };
+		3C1932091E4CBE1C00E5DBA0 /* InstaFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1932081E4CBE1C00E5DBA0 /* InstaFeedUITests.swift */; };
+		3C1932191E4CD11800E5DBA0 /* ExploreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1932181E4CD11800E5DBA0 /* ExploreCollectionViewController.swift */; };
+		3C19321B1E4CD14F00E5DBA0 /* ExplorePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19321A1E4CD14F00E5DBA0 /* ExplorePhotoCollectionViewCell.swift */; };
+		3C19321D1E4CDCC300E5DBA0 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19321C1E4CDCC300E5DBA0 /* FeedTableViewController.swift */; };
+		3C1932201E4CE25A00E5DBA0 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19321E1E4CE25A00E5DBA0 /* HeaderTableViewCell.swift */; };
+		3C1932211E4CE25A00E5DBA0 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C19321F1E4CE25A00E5DBA0 /* HeaderTableViewCell.xib */; };
+		3C1932231E4CE83C00E5DBA0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1932221E4CE83C00E5DBA0 /* PhotoTableViewCell.swift */; };
+		3C1932251E4CE8A900E5DBA0 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1932241E4CE8A900E5DBA0 /* CommentTableViewCell.swift */; };
+		3C88F9991E4DC3D80040317B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C88F9981E4DC3D80040317B /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C1931FA1E4CBE1C00E5DBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C1931DD1E4CBE1C00E5DBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C1931E41E4CBE1C00E5DBA0;
+			remoteInfo = InstaFeed;
+		};
+		3C1932051E4CBE1C00E5DBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C1931DD1E4CBE1C00E5DBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C1931E41E4CBE1C00E5DBA0;
+			remoteInfo = InstaFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F28301970823CCFD8A46EF /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.debug.xcconfig"; path = "InstaFeed/Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1931E51E4CBE1C00E5DBA0 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1931E81E4CBE1C00E5DBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C1931ED1E4CBE1C00E5DBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C1931EF1E4CBE1C00E5DBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C1931F21E4CBE1C00E5DBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C1931F41E4CBE1C00E5DBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1931F91E4CBE1C00E5DBA0 /* InstaFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1931FD1E4CBE1C00E5DBA0 /* InstaFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedTests.swift; sourceTree = "<group>"; };
+		3C1931FF1E4CBE1C00E5DBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1932041E4CBE1C00E5DBA0 /* InstaFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1932081E4CBE1C00E5DBA0 /* InstaFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFeedUITests.swift; sourceTree = "<group>"; };
+		3C19320A1E4CBE1C00E5DBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1932181E4CD11800E5DBA0 /* ExploreCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewController.swift; sourceTree = "<group>"; };
+		3C19321A1E4CD14F00E5DBA0 /* ExplorePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C19321C1E4CDCC300E5DBA0 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		3C19321E1E4CE25A00E5DBA0 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		3C19321F1E4CE25A00E5DBA0 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		3C1932221E4CE83C00E5DBA0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		3C1932241E4CE8A900E5DBA0 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3C88F9981E4DC3D80040317B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9701531A1954F02F5A718971 /* Pods_InstaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC48CEEA6878D2B2AB660E51 /* Pods-InstaFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.release.xcconfig"; path = "InstaFeed/Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C1931E21E4CBE1C00E5DBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6FEBCACFC98E7C17C3869B /* Pods_InstaFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1931F61E4CBE1C00E5DBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1932011E4CBE1C00E5DBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35988C5D9FCD76AF02271744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F28301970823CCFD8A46EF /* Pods-InstaFeed.debug.xcconfig */,
+				BC48CEEA6878D2B2AB660E51 /* Pods-InstaFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C1931DC1E4CBE1C00E5DBA0 = {
+			isa = PBXGroup;
+			children = (
+				3C1931E71E4CBE1C00E5DBA0 /* InstaFeed */,
+				3C1931FC1E4CBE1C00E5DBA0 /* InstaFeedTests */,
+				3C1932071E4CBE1C00E5DBA0 /* InstaFeedUITests */,
+				3C1931E61E4CBE1C00E5DBA0 /* Products */,
+				35988C5D9FCD76AF02271744 /* Pods */,
+				D7E68EB6CD93DD32F0A5C955 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C1931E61E4CBE1C00E5DBA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C1931E51E4CBE1C00E5DBA0 /* InstaFeed.app */,
+				3C1931F91E4CBE1C00E5DBA0 /* InstaFeedTests.xctest */,
+				3C1932041E4CBE1C00E5DBA0 /* InstaFeedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C1931E71E4CBE1C00E5DBA0 /* InstaFeed */ = {
+			isa = PBXGroup;
+			children = (
+				3C1931E81E4CBE1C00E5DBA0 /* AppDelegate.swift */,
+				3C1931EC1E4CBE1C00E5DBA0 /* Main.storyboard */,
+				3C1932241E4CE8A900E5DBA0 /* CommentTableViewCell.swift */,
+				3C1931EF1E4CBE1C00E5DBA0 /* Assets.xcassets */,
+				3C1931F11E4CBE1C00E5DBA0 /* LaunchScreen.storyboard */,
+				3C1931F41E4CBE1C00E5DBA0 /* Info.plist */,
+				3C1932181E4CD11800E5DBA0 /* ExploreCollectionViewController.swift */,
+				3C19321A1E4CD14F00E5DBA0 /* ExplorePhotoCollectionViewCell.swift */,
+				3C1932261E4CEEEF00E5DBA0 /* View */,
+				3C19321C1E4CDCC300E5DBA0 /* FeedTableViewController.swift */,
+				3C19321E1E4CE25A00E5DBA0 /* HeaderTableViewCell.swift */,
+				3C19321F1E4CE25A00E5DBA0 /* HeaderTableViewCell.xib */,
+				3C1932221E4CE83C00E5DBA0 /* PhotoTableViewCell.swift */,
+				3C88F9981E4DC3D80040317B /* Podfile */,
+			);
+			path = InstaFeed;
+			sourceTree = "<group>";
+		};
+		3C1931FC1E4CBE1C00E5DBA0 /* InstaFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C1931FD1E4CBE1C00E5DBA0 /* InstaFeedTests.swift */,
+				3C1931FF1E4CBE1C00E5DBA0 /* Info.plist */,
+			);
+			path = InstaFeedTests;
+			sourceTree = "<group>";
+		};
+		3C1932071E4CBE1C00E5DBA0 /* InstaFeedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C1932081E4CBE1C00E5DBA0 /* InstaFeedUITests.swift */,
+				3C19320A1E4CBE1C00E5DBA0 /* Info.plist */,
+			);
+			path = InstaFeedUITests;
+			sourceTree = "<group>";
+		};
+		3C1932261E4CEEEF00E5DBA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D7E68EB6CD93DD32F0A5C955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9701531A1954F02F5A718971 /* Pods_InstaFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C1931E41E4CBE1C00E5DBA0 /* InstaFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C19320D1E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeed" */;
+			buildPhases = (
+				D84C362D5DC566F148D067B0 /* [CP] Check Pods Manifest.lock */,
+				3C1931E11E4CBE1C00E5DBA0 /* Sources */,
+				3C1931E21E4CBE1C00E5DBA0 /* Frameworks */,
+				3C1931E31E4CBE1C00E5DBA0 /* Resources */,
+				B7D827DAE817A5582BB26E33 /* [CP] Embed Pods Frameworks */,
+				F9FE54E4DB7BA81BE8C7C339 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaFeed;
+			productName = InstaFeed;
+			productReference = 3C1931E51E4CBE1C00E5DBA0 /* InstaFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C1931F81E4CBE1C00E5DBA0 /* InstaFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1932101E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeedTests" */;
+			buildPhases = (
+				3C1931F51E4CBE1C00E5DBA0 /* Sources */,
+				3C1931F61E4CBE1C00E5DBA0 /* Frameworks */,
+				3C1931F71E4CBE1C00E5DBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1931FB1E4CBE1C00E5DBA0 /* PBXTargetDependency */,
+			);
+			name = InstaFeedTests;
+			productName = InstaFeedTests;
+			productReference = 3C1931F91E4CBE1C00E5DBA0 /* InstaFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C1932031E4CBE1C00E5DBA0 /* InstaFeedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1932131E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeedUITests" */;
+			buildPhases = (
+				3C1932001E4CBE1C00E5DBA0 /* Sources */,
+				3C1932011E4CBE1C00E5DBA0 /* Frameworks */,
+				3C1932021E4CBE1C00E5DBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1932061E4CBE1C00E5DBA0 /* PBXTargetDependency */,
+			);
+			name = InstaFeedUITests;
+			productName = InstaFeedUITests;
+			productReference = 3C1932041E4CBE1C00E5DBA0 /* InstaFeedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C1931DD1E4CBE1C00E5DBA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Кирилл Рябинин";
+				TargetAttributes = {
+					3C1931E41E4CBE1C00E5DBA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+					};
+					3C1931F81E4CBE1C00E5DBA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3C1931E41E4CBE1C00E5DBA0;
+					};
+					3C1932031E4CBE1C00E5DBA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3C1931E41E4CBE1C00E5DBA0;
+					};
+				};
+			};
+			buildConfigurationList = 3C1931E01E4CBE1C00E5DBA0 /* Build configuration list for PBXProject "InstaFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C1931DC1E4CBE1C00E5DBA0;
+			productRefGroup = 3C1931E61E4CBE1C00E5DBA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C1931E41E4CBE1C00E5DBA0 /* InstaFeed */,
+				3C1931F81E4CBE1C00E5DBA0 /* InstaFeedTests */,
+				3C1932031E4CBE1C00E5DBA0 /* InstaFeedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C1931E31E4CBE1C00E5DBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C88F9991E4DC3D80040317B /* Podfile in Resources */,
+				3C1932211E4CE25A00E5DBA0 /* HeaderTableViewCell.xib in Resources */,
+				3C1931F31E4CBE1C00E5DBA0 /* LaunchScreen.storyboard in Resources */,
+				3C1931F01E4CBE1C00E5DBA0 /* Assets.xcassets in Resources */,
+				3C1931EE1E4CBE1C00E5DBA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1931F71E4CBE1C00E5DBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1932021E4CBE1C00E5DBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7D827DAE817A5582BB26E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/InstaFeed/Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D84C362D5DC566F148D067B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FE54E4DB7BA81BE8C7C339 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/InstaFeed/Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C1931E11E4CBE1C00E5DBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1931E91E4CBE1C00E5DBA0 /* AppDelegate.swift in Sources */,
+				3C1932201E4CE25A00E5DBA0 /* HeaderTableViewCell.swift in Sources */,
+				3C1932231E4CE83C00E5DBA0 /* PhotoTableViewCell.swift in Sources */,
+				3C1932191E4CD11800E5DBA0 /* ExploreCollectionViewController.swift in Sources */,
+				3C1932251E4CE8A900E5DBA0 /* CommentTableViewCell.swift in Sources */,
+				3C19321B1E4CD14F00E5DBA0 /* ExplorePhotoCollectionViewCell.swift in Sources */,
+				3C19321D1E4CDCC300E5DBA0 /* FeedTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1931F51E4CBE1C00E5DBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1931FE1E4CBE1C00E5DBA0 /* InstaFeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1932001E4CBE1C00E5DBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1932091E4CBE1C00E5DBA0 /* InstaFeedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C1931FB1E4CBE1C00E5DBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C1931E41E4CBE1C00E5DBA0 /* InstaFeed */;
+			targetProxy = 3C1931FA1E4CBE1C00E5DBA0 /* PBXContainerItemProxy */;
+		};
+		3C1932061E4CBE1C00E5DBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C1931E41E4CBE1C00E5DBA0 /* InstaFeed */;
+			targetProxy = 3C1932051E4CBE1C00E5DBA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C1931EC1E4CBE1C00E5DBA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C1931ED1E4CBE1C00E5DBA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C1931F11E4CBE1C00E5DBA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C1931F21E4CBE1C00E5DBA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C19320B1E4CBE1C00E5DBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C19320C1E4CBE1C00E5DBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C19320E1E4CBE1C00E5DBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F28301970823CCFD8A46EF /* Pods-InstaFeed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3C19320F1E4CBE1C00E5DBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC48CEEA6878D2B2AB660E51 /* Pods-InstaFeed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3C1932111E4CBE1C00E5DBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaFeed.app/InstaFeed";
+			};
+			name = Debug;
+		};
+		3C1932121E4CBE1C00E5DBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaFeed.app/InstaFeed";
+			};
+			name = Release;
+		};
+		3C1932141E4CBE1C00E5DBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = InstaFeed;
+			};
+			name = Debug;
+		};
+		3C1932151E4CBE1C00E5DBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = InstaFeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.InstaFeedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = InstaFeed;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C1931E01E4CBE1C00E5DBA0 /* Build configuration list for PBXProject "InstaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C19320B1E4CBE1C00E5DBA0 /* Debug */,
+				3C19320C1E4CBE1C00E5DBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C19320D1E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C19320E1E4CBE1C00E5DBA0 /* Debug */,
+				3C19320F1E4CBE1C00E5DBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C1932101E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1932111E4CBE1C00E5DBA0 /* Debug */,
+				3C1932121E4CBE1C00E5DBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C1932131E4CBE1C00E5DBA0 /* Build configuration list for PBXNativeTarget "InstaFeedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1932141E4CBE1C00E5DBA0 /* Debug */,
+				3C1932151E4CBE1C00E5DBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C1931DD1E4CBE1C00E5DBA0 /* Project object */;
+}
