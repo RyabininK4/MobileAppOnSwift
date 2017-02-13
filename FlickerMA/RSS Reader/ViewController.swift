@@ -39,16 +39,22 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                     for articleFromJson in articlesFromJson
                     {
                         let article = Article()
+                        //if let urlToImage = articleFromJson["media"] as? [String : AnyObject]
+                        //{
+                            //let urlToImage = articleFromJson["m"] as? String
+                            //{
+                                //article.imageUrl = urlToImage
+                            //}
+                        //}
                         if let title = articleFromJson["title"] as? String,
                            let date = articleFromJson["date_taken"] as? String,
-                           let tags = articleFromJson["tags"] as? String
-                           //let url = articleFromJson["url"] as? String,
-                           //let urlToImage = articleFromJson["src"] as? String
+                           let tags = articleFromJson["tags"] as? String,
+                           let url = articleFromJson["link"] as? String
                            {
                             article.date = date
                             article.tags = tags
                             article.headline = title
-                            //article.url = url
+                            article.url = url
                             //article.imageUrl = urlToImage
                            }
                         self.articles?.append(article)
@@ -85,9 +91,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return self.articles?.count ?? 0
     }
     
-    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let
-    //}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let webVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "web") as! WebViewController
+        
+        webVC.url = self.articles?[indexPath.item].url
+        
+        self.present(webVC, animated: true, completion: nil)
+        
+    }
 
 }
 

@@ -130,7 +130,7 @@
         <!--Web View Controller-->
         <scene sceneID="Gn8-bu-VPR">
             <objects>
-                <viewController id="nda-Sg-Tik" customClass="WebViewController" customModule="FlickerMA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="nda-Sg-Tik" customClass="WebViewController" customModule="FlickerMA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wMd-pp-jUH"/>
                         <viewControllerLayoutGuide type="bottom" id="hG5-sA-yVa"/>
@@ -149,6 +149,9 @@
                                     <navigationItem title="Photo" id="d87-9g-1OV">
                                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="TCO-1g-yuH">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="d6e-pg-Ncv"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

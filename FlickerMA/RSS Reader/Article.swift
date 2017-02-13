@@ -13,7 +13,7 @@ class Article: NSObject {
     var headline: String?
     var tags: String?
     var date: String?
-    //var url: String?
-    //var imageUrl: String!
+    var url: String?
+    var imageUrl: String?
     
 }
