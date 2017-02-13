@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C5502AA1E4AEC9400DED656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502A91E4AEC9400DED656 /* AppDelegate.swift */; };
+		3C5502AC1E4AEC9400DED656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502AB1E4AEC9400DED656 /* ViewController.swift */; };
+		3C5502AF1E4AEC9400DED656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5502AD1E4AEC9400DED656 /* Main.storyboard */; };
+		3C5502B11E4AEC9400DED656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5502B01E4AEC9400DED656 /* Assets.xcassets */; };
+		3C5502B41E4AEC9400DED656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5502B21E4AEC9400DED656 /* LaunchScreen.storyboard */; };
+		3C5502BF1E4AEC9400DED656 /* FlickerMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502BE1E4AEC9400DED656 /* FlickerMATests.swift */; };
+		3C5502CA1E4AEC9400DED656 /* FlickerMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502C91E4AEC9400DED656 /* FlickerMA.swift */; };
+		3C5502D81E4AF19100DED656 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502D71E4AF19100DED656 /* ArticleCell.swift */; };
+		3C5502DA1E4AF35E00DED656 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5502D91E4AF35E00DED656 /* Article.swift */; };
+		3CDF1AD61E510D8C00AACFF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF1AD51E510D8C00AACFF7 /* WebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C5502BB1E4AEC9400DED656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C55029E1E4AEC9400DED656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5502A51E4AEC9400DED656;
+			remoteInfo = "RSS Reader";
+		};
+		3C5502C61E4AEC9400DED656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C55029E1E4AEC9400DED656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5502A51E4AEC9400DED656;
+			remoteInfo = "RSS Reader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C5502A61E4AEC9400DED656 /* FlickerMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5502A91E4AEC9400DED656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C5502AB1E4AEC9400DED656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C5502AE1E4AEC9400DED656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C5502B01E4AEC9400DED656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C5502B31E4AEC9400DED656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C5502B51E4AEC9400DED656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5502BA1E4AEC9400DED656 /* FlickerMATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerMATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5502BE1E4AEC9400DED656 /* FlickerMATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerMATests.swift; sourceTree = "<group>"; };
+		3C5502C01E4AEC9400DED656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5502C51E4AEC9400DED656 /* FlickerMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5502C91E4AEC9400DED656 /* FlickerMA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerMA.swift; sourceTree = "<group>"; };
+		3C5502CB1E4AEC9400DED656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5502D71E4AF19100DED656 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		3C5502D91E4AF35E00DED656 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3CDF1AD51E510D8C00AACFF7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C5502A31E4AEC9400DED656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502B71E4AEC9400DED656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502C21E4AEC9400DED656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C55029D1E4AEC9400DED656 = {
+			isa = PBXGroup;
+			children = (
+				3C5502A81E4AEC9400DED656 /* FlickerMA */,
+				3C5502BD1E4AEC9400DED656 /* FlickerMATests */,
+				3C5502C81E4AEC9400DED656 /* FlickerMAUITests */,
+				3C5502A71E4AEC9400DED656 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C5502A71E4AEC9400DED656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C5502A61E4AEC9400DED656 /* FlickerMA.app */,
+				3C5502BA1E4AEC9400DED656 /* FlickerMATests.xctest */,
+				3C5502C51E4AEC9400DED656 /* FlickerMAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C5502A81E4AEC9400DED656 /* FlickerMA */ = {
+			isa = PBXGroup;
+			children = (
+				3C5502A91E4AEC9400DED656 /* AppDelegate.swift */,
+				3C5502AB1E4AEC9400DED656 /* ViewController.swift */,
+				3C5502AD1E4AEC9400DED656 /* Main.storyboard */,
+				3C5502B01E4AEC9400DED656 /* Assets.xcassets */,
+				3C5502B21E4AEC9400DED656 /* LaunchScreen.storyboard */,
+				3C5502B51E4AEC9400DED656 /* Info.plist */,
+				3C5502D71E4AF19100DED656 /* ArticleCell.swift */,
+				3C5502D91E4AF35E00DED656 /* Article.swift */,
+				3CDF1AD51E510D8C00AACFF7 /* WebViewController.swift */,
+			);
+			name = FlickerMA;
+			path = "RSS Reader";
+			sourceTree = "<group>";
+		};
+		3C5502BD1E4AEC9400DED656 /* FlickerMATests */ = {
+			isa = PBXGroup;
+			children = (
+				3C5502BE1E4AEC9400DED656 /* FlickerMATests.swift */,
+				3C5502C01E4AEC9400DED656 /* Info.plist */,
+			);
+			name = FlickerMATests;
+			path = "RSS ReaderTests";
+			sourceTree = "<group>";
+		};
+		3C5502C81E4AEC9400DED656 /* FlickerMAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C5502C91E4AEC9400DED656 /* FlickerMA.swift */,
+				3C5502CB1E4AEC9400DED656 /* Info.plist */,
+			);
+			name = FlickerMAUITests;
+			path = "RSS ReaderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C5502A51E4AEC9400DED656 /* FlickerMA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5502CE1E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMA" */;
+			buildPhases = (
+				3C5502A21E4AEC9400DED656 /* Sources */,
+				3C5502A31E4AEC9400DED656 /* Frameworks */,
+				3C5502A41E4AEC9400DED656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickerMA;
+			productName = "RSS Reader";
+			productReference = 3C5502A61E4AEC9400DED656 /* FlickerMA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C5502B91E4AEC9400DED656 /* FlickerMATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5502D11E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMATests" */;
+			buildPhases = (
+				3C5502B61E4AEC9400DED656 /* Sources */,
+				3C5502B71E4AEC9400DED656 /* Frameworks */,
+				3C5502B81E4AEC9400DED656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C5502BC1E4AEC9400DED656 /* PBXTargetDependency */,
+			);
+			name = FlickerMATests;
+			productName = "RSS ReaderTests";
+			productReference = 3C5502BA1E4AEC9400DED656 /* FlickerMATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C5502C41E4AEC9400DED656 /* FlickerMAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5502D41E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMAUITests" */;
+			buildPhases = (
+				3C5502C11E4AEC9400DED656 /* Sources */,
+				3C5502C21E4AEC9400DED656 /* Frameworks */,
+				3C5502C31E4AEC9400DED656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C5502C71E4AEC9400DED656 /* PBXTargetDependency */,
+			);
+			name = FlickerMAUITests;
+			productName = "RSS ReaderUITests";
+			productReference = 3C5502C51E4AEC9400DED656 /* FlickerMAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C55029E1E4AEC9400DED656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Кирилл Рябинин";
+				TargetAttributes = {
+					3C5502A51E4AEC9400DED656 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+					};
+					3C5502B91E4AEC9400DED656 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3C5502A51E4AEC9400DED656;
+					};
+					3C5502C41E4AEC9400DED656 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LL8UYH94A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3C5502A51E4AEC9400DED656;
+					};
+				};
+			};
+			buildConfigurationList = 3C5502A11E4AEC9400DED656 /* Build configuration list for PBXProject "FlickerMA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C55029D1E4AEC9400DED656;
+			productRefGroup = 3C5502A71E4AEC9400DED656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C5502A51E4AEC9400DED656 /* FlickerMA */,
+				3C5502B91E4AEC9400DED656 /* FlickerMATests */,
+				3C5502C41E4AEC9400DED656 /* FlickerMAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C5502A41E4AEC9400DED656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5502B41E4AEC9400DED656 /* LaunchScreen.storyboard in Resources */,
+				3C5502B11E4AEC9400DED656 /* Assets.xcassets in Resources */,
+				3C5502AF1E4AEC9400DED656 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502B81E4AEC9400DED656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502C31E4AEC9400DED656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C5502A21E4AEC9400DED656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5502DA1E4AF35E00DED656 /* Article.swift in Sources */,
+				3C5502AC1E4AEC9400DED656 /* ViewController.swift in Sources */,
+				3C5502AA1E4AEC9400DED656 /* AppDelegate.swift in Sources */,
+				3CDF1AD61E510D8C00AACFF7 /* WebViewController.swift in Sources */,
+				3C5502D81E4AF19100DED656 /* ArticleCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502B61E4AEC9400DED656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5502BF1E4AEC9400DED656 /* FlickerMATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5502C11E4AEC9400DED656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5502CA1E4AEC9400DED656 /* FlickerMA.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C5502BC1E4AEC9400DED656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5502A51E4AEC9400DED656 /* FlickerMA */;
+			targetProxy = 3C5502BB1E4AEC9400DED656 /* PBXContainerItemProxy */;
+		};
+		3C5502C71E4AEC9400DED656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5502A51E4AEC9400DED656 /* FlickerMA */;
+			targetProxy = 3C5502C61E4AEC9400DED656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C5502AD1E4AEC9400DED656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C5502AE1E4AEC9400DED656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C5502B21E4AEC9400DED656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C5502B31E4AEC9400DED656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C5502CC1E4AEC9400DED656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C5502CD1E4AEC9400DED656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C5502CF1E4AEC9400DED656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.FlickerMA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3C5502D01E4AEC9400DED656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.FlickerMA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3C5502D21E4AEC9400DED656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.RSS-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickerMA.app/FlickerMA";
+			};
+			name = Debug;
+		};
+		3C5502D31E4AEC9400DED656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.RSS-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickerMA.app/FlickerMA";
+			};
+			name = Release;
+		};
+		3C5502D51E4AEC9400DED656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.RSS-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "RSS Reader";
+			};
+			name = Debug;
+		};
+		3C5502D61E4AEC9400DED656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LL8UYH94A9;
+				INFOPLIST_FILE = "RSS ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.RSS-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "RSS Reader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C5502A11E4AEC9400DED656 /* Build configuration list for PBXProject "FlickerMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5502CC1E4AEC9400DED656 /* Debug */,
+				3C5502CD1E4AEC9400DED656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C5502CE1E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5502CF1E4AEC9400DED656 /* Debug */,
+				3C5502D01E4AEC9400DED656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C5502D11E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5502D21E4AEC9400DED656 /* Debug */,
+				3C5502D31E4AEC9400DED656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C5502D41E4AEC9400DED656 /* Build configuration list for PBXNativeTarget "FlickerMAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5502D51E4AEC9400DED656 /* Debug */,
+				3C5502D61E4AEC9400DED656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C55029E1E4AEC9400DED656 /* Project object */;
+}
